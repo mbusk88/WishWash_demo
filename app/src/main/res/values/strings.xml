@@ -1,0 +1,24 @@
+<resources>
+    <string name="wishwash">WishWash</string>
+    <string name="slogan">Wash Whenever You Wish</string>
+    <string name="email">Email</string>
+    <string name="email_hint">Enter your email here</string>
+    <string name="signup">Sign up</string>
+    <string name="signin">Sign in</string>
+    <string name="password">Password</string>
+    <string name="new_password">New password</string>
+    <string name="password_hint">Enter your password here</string>
+    <string name="new_password_hint">Enter your new password here</string>
+    <string name="back">Back</string>
+    <string name="re_enter_password">Re-enter new password</string>
+    <string name="re_enter_password_hint">Re-enter your new password here</string>
+    <string name="calendar">Calendar</string>
+    <string name="bookings">Bookings</string>
+    <string name="chat">Chat</string>
+    <string name="tips">Tips</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

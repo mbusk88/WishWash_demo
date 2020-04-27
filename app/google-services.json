@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1043943511777",
+    "firebase_url": "https://wishwashdemo.firebaseio.com",
+    "project_id": "wishwashdemo",
+    "storage_bucket": "wishwashdemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043943511777:android:e0ca8bc66c4a70defdc9a0",
+        "android_client_info": {
+          "package_name": "com.example.wishwash_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043943511777-g5f28ufrvmdao41c5jvqf24kjfdj2vmv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wishwash_demo",
+            "certificate_hash": "8db2c869e4687c02f473ccbab8fee05ff8f1fa5d"
+          }
+        },
+        {
+          "client_id": "1043943511777-3n3f3p2jdd2s5gr0rn5u44ac7dattf5j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDvWvOfqRRt7YutBeeRHvE4OQE5xKmp0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043943511777-3n3f3p2jdd2s5gr0rn5u44ac7dattf5j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
