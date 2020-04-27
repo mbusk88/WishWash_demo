@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorTurquoise"
+    android:background="@color/colorRed"
     tools:context=".Fragments.SignUpFragment">
 
     <Button
@@ -18,7 +18,7 @@
         android:paddingHorizontal="40dp"
         android:text="@string/back"
         android:background="@drawable/button_border"
-        android:textColor="@color/colorTurquoise"
+        android:textColor="@color/colorRed"
         android:textStyle="bold"
         />
 
@@ -36,7 +36,7 @@
         android:paddingHorizontal="40dp"
         android:text="@string/signup"
         android:background="@drawable/button_border"
-        android:textColor="@color/colorTurquoise"
+        android:textColor="@color/colorRed"
         android:textStyle="bold"/>
 
     <EditText
@@ -45,9 +45,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/TextView_signupFragment_passwordReenterTitle"
         android:layout_marginHorizontal="20dp"
-        android:textColor="@color/colorBlack"
-        android:textColorHint="@color/colorBlack"
-        android:backgroundTint="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:backgroundTint="@color/colorWhite"
         android:hint="@string/re_enter_password_hint"
         android:importantForAutofill="no"
         android:imeOptions="actionDone"
@@ -59,9 +59,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/TextView_signupFragment_emailTitle"
         android:layout_marginHorizontal="20dp"
-        android:textColor="@color/colorBlack"
-        android:textColorHint="@color/colorBlack"
-        android:backgroundTint="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:backgroundTint="@color/colorWhite"
         android:hint="@string/email_hint"
         android:imeOptions="actionDone"
         android:inputType="textEmailAddress" />
@@ -72,9 +72,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/TextView_signupFragment_passwordTitle"
         android:layout_marginHorizontal="20dp"
-        android:textColor="@color/colorBlack"
-        android:textColorHint="@color/colorBlack"
-        android:backgroundTint="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:backgroundTint="@color/colorWhite"
         android:hint="@string/new_password_hint"
         android:imeOptions="actionDone"
         android:inputType="textPassword" />

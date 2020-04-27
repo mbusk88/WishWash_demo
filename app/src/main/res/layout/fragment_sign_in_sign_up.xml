@@ -19,7 +19,7 @@
             android:text="@string/signin"
             android:textSize="20sp"
             android:background="@drawable/button_border"
-            android:textColor="@color/colorTurquoise"
+            android:textColor="@color/colorRed"
             android:textStyle="bold"/>
 
 
@@ -32,7 +32,7 @@
             android:text="@string/signup"
             android:textSize="20sp"
             android:background="@drawable/button_border"
-            android:textColor="@color/colorTurquoise"
+            android:textColor="@color/colorRed"
             android:textStyle="bold"/>
 
     </LinearLayout>
