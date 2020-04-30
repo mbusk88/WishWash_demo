@@ -1,19 +1,28 @@
 package com.example.wishwash_demo;
 
+import java.util.Calendar;
 import java.util.Date;
 
 public class Booking {
-    private Date date;
-    private Date timeInterval;
+    Calendar date;
+    User user;
+    WashingMachine washingMachine;
 
-    Booking(Date date, Date timeInterval) {
-        this.date = date;
-        this.timeInterval = timeInterval;
+    public Booking() {
     }
 
-    public Date getDate() { return date; }
-    public void setDate(Date date) { this.date = date; }
+    public Booking(Calendar date, User user, WashingMachine washingMachine) {
+        this.date = date;
+        this.user = user;
+        this.washingMachine = washingMachine;
+    }
 
-    public Date getTimeInterval() { return timeInterval; }
-    public void setTimeInterval(Date timeInterval) { this.timeInterval = timeInterval; }
+    public Calendar getDate() { return date; }
+    public void setDate(Calendar date) { this.date = date; }
+
+    public User getUser() { return user; }
+    public void setUser(User user) { this.user = user; }
+
+    public WashingMachine getWashingMachine() { return washingMachine; }
+    public void setWashingMachine(WashingMachine washingMachine) { this.washingMachine = washingMachine; }
 }

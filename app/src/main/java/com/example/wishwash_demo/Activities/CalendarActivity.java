@@ -12,10 +12,13 @@ import android.widget.Toast;
 import com.example.wishwash_demo.Fragments.BookingsFragment;
 import com.example.wishwash_demo.Fragments.CalendarFragment;
 import com.example.wishwash_demo.Fragments.ChatFragment;
+import com.example.wishwash_demo.Fragments.NewBookingFragment;
 import com.example.wishwash_demo.Fragments.TipsFragment;
 import com.example.wishwash_demo.R;
 import com.example.wishwash_demo.User;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.Calendar;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -25,13 +28,15 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-public class CalendarActivity extends AppCompatActivity {
+public class CalendarActivity extends AppCompatActivity implements CalendarFragment.CalendarFragmentListener, NewBookingFragment.NewBookingFragmentListener {
     private BottomNavigationView bottomNavigationView;
     private Toolbar actionBar;
     private final String TAG = "CalendarActivity";
     private FragmentTransaction transaction;
     private FragmentManager fragmentManager;
     private SharedPreferences sp;
+    private CalendarFragment calendarFragment;
+    private NewBookingFragment newBookingFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +44,11 @@ public class CalendarActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate called");
         setContentView(R.layout.activity_calendar);
 
-        sp = getSharedPreferences("login", MODE_PRIVATE);
+        calendarFragment = new CalendarFragment();
+        newBookingFragment = new NewBookingFragment();
 
+        // Try to: If user is already loggen in, forward to CalendarActivity:
+        sp = getSharedPreferences("login", MODE_PRIVATE);
         if(sp.getBoolean("logged",false)){
             goToCalendarActivity();
         }
@@ -63,7 +71,7 @@ public class CalendarActivity extends AppCompatActivity {
         getSupportActionBar().setCustomView(R.layout.action_bar);
     }
 
-    // Inflates --- SignInSignUpFragment/fragment_sign_in_sign_up --- as the first fragment to be shown when app is started
+    // Inflates --- CalendarFragment/fragment_calendar --- as the first fragment to be shown when app is started
     private void initFirstFragment() {
         Fragment fragment = new CalendarFragment();
         transaction = getSupportFragmentManager().beginTransaction();
@@ -104,5 +112,25 @@ public class CalendarActivity extends AppCompatActivity {
     private void goToCalendarActivity() {
         Intent toCalendarActivityIntent = new Intent(CalendarActivity.this, CalendarActivity.class);
         startActivity(toCalendarActivityIntent);
+    }
+
+    @Override
+    public void onDateChosen(Calendar c) {
+        // Second, open NewBookingFragment
+        // openFragment(NewBookingFragment.newInstance(YEAR, MONTH, DAYOFMONTH)); -> takes three int arguments, f.x. NewBookingFragment.newInstance(2020, 4, 29)
+
+        // Third, show all times for the chosen day -> maybe externalize
+        // TODO: Insert code here
+    }
+
+    @Override
+    public void onTimeChosen(Calendar c) {
+        // First, update firebase with new info -> maybe externalize
+        // TODO: Insert code here
+
+        // Second, update calendar in CalendarFragment (dayOfMonth background color should change to display that the user has booked the current day)
+        // calendarFragment.updateDayOfMonthBackgroundColor(userHasBookedDate) or something like that
+
+
     }
 }

@@ -11,7 +11,9 @@ public class User {
     private String department;
     private List<Booking> bookingList;
 
-    User(String email, String password) {
+    public User(){}
+
+    public User(String email, String password) {
         this.email = email;
         this.password = password;
         this.firstName = "";
@@ -21,7 +23,7 @@ public class User {
         this.bookingList = new ArrayList<>();
     }
 
-    User(String email, String password, String firstName, String middleName, String lastName, String department, List<Booking> bookingList) {
+    public User(String email, String password, String firstName, String middleName, String lastName, String department, List<Booking> bookingList) {
         this.email = email;
         this.password = password;
         this.firstName = firstName;

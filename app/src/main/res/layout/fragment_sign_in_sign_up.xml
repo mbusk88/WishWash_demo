@@ -18,7 +18,7 @@
             android:layout_marginHorizontal="20dp"
             android:text="@string/signin"
             android:textSize="20sp"
-            android:background="@drawable/button_border"
+            android:background="@drawable/button_border_login"
             android:textColor="@color/colorRed"
             android:textStyle="bold"/>
 
@@ -31,7 +31,7 @@
             android:layout_marginTop="60dp"
             android:text="@string/signup"
             android:textSize="20sp"
-            android:background="@drawable/button_border"
+            android:background="@drawable/button_border_login"
             android:textColor="@color/colorRed"
             android:textStyle="bold"/>
 

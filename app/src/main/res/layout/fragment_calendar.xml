@@ -1,16 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.CalendarFragment">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:src="@drawable/icon_calendar"
-        />
+    <Button
+        android:id="@+id/Button_calendarFragment_ok"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/button_border_app"
+        android:paddingHorizontal="40dp"
+        android:text="@string/ok"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
 
-</FrameLayout>
+    <CalendarView
+        android:id="@+id/CalendarView_CalendarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_CalendarFragment_ChooseYourDate"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/TextView_CalendarFragment_ChooseYourDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/choose_date_calendar"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
