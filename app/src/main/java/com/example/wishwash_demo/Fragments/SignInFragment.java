@@ -70,7 +70,6 @@ public class SignInFragment extends Fragment {
             }
         };
 
-        // Accessing variables:
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,7 +110,6 @@ public class SignInFragment extends Fragment {
                     }
                 }
             });
-
 
         return v;
         }
